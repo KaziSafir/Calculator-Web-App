@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="ascll" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculate</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div>
+        <input id="display" readonly />
+      </div>
+      <div>
+        <button class="lightgray" onclick="clearall()">AC</button
+        ><button class="lightgray" onclick="posneg()">+/-</button
+        ><button class="lightgray" onclick="percent()">%</button
+        ><button class="orange" onclick="buttonval('/')">/</button>
+      </div>
+
+      <div id="keys">
+        <button onclick="buttonval('7')">7</button
+        ><button onclick="buttonval('8')">8</button
+        ><button onclick="buttonval('9')">9</button
+        ><button class="orange" onclick="buttonval('*')">x</button>
+      </div>
+
+      <div>
+        <button onclick="buttonval('4')">4</button
+        ><button onclick="buttonval('5')">5</button
+        ><button onclick="buttonval('6')">6</button
+        ><button class="orange" onclick="buttonval('-')">-</button>
+      </div>
+
+      <div>
+        <button onclick="buttonval('1')">1</button
+        ><button onclick="buttonval('2')">2</button
+        ><button onclick="buttonval('3')">3</button
+        ><button class="orange" onclick="buttonval('+')">+</button>
+      </div>
+
+      <div>
+        <button class="zero" onclick="buttonval('0')">0</button
+        ><button onclick="buttonval('.')">.</button
+        ><button class="orange" onclick="calculate()">=</button>
+      </div>
+    </div>
+    <footer>
+      <p>Made By Kazi A. Safir</p>
+      <p>Email: Kazi.safir@yahoo.com</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
